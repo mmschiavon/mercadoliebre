@@ -18,7 +18,7 @@ article {
     background-color: #ebebeb;
 }
 article p {
-    background-color:white;
+    background-color:#ebebeb;
 }
 .titulares {
     font-size: 24px;   
@@ -38,9 +38,11 @@ article p {
 }
 div {
     text-align: center;
+    width: 90vw;
 }
 section {
     text-align: center;
+    width: 90vw;
 }
 footer i {
     font-size: 2em;
