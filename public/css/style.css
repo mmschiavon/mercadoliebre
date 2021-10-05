@@ -1,23 +1,32 @@
 * {
 background-color: #EAC926;
-};
-cuerpo-de-texto {
-    font-size: 12px;
-
+font-size: 12px;
+font-family: 'Roboto', sans-serif;
 }
+
 .titulares {
-    font-size: 24px;
-    
+    font-size: 24px;   
 }
 .precios {
     font-size: 18px;
     
 }
-descuentos {
+.descuentos {
     font-size: 16px;
     
 }
-descripciones {
+.descripciones {
     font-size: 16px;
     
+}
+div {
+    text-align: center;
+}
+section {
+    text-align: center;
+}
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03264C;
 }
