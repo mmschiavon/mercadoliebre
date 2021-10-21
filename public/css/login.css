@@ -1,0 +1,46 @@
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+#login-form input {
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 80%;
+  padding: 0.9rem;
+  margin-bottom: 3rem;
+}
+
+#login-form button {
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 80%;
+  padding: 0.8rem;
+}
+
+main {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+@media (min-width: 361px) {
+}
+
+@media (min-width: 769px) {
+  #register-form input {
+    width: 40%;
+  }
+
+  #register-form button {
+    width: 40%;
+  }
+}
