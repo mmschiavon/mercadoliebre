@@ -1,5 +1,4 @@
 * {
-  /* background-color: #eac926; */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -7,10 +6,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: #000;
+}
+
 header {
   background-color: #eac926;
   padding: 1.2rem;
   align-items: center;
+  /* position: fixed; */
+  width: 100%;
 }
 
 header p {
@@ -25,7 +30,6 @@ header p {
   border: none;
   border-radius: 3px;
   width: 30%;
-  display: flex;
   align-items: center;
   padding: 0.7rem;
 }
@@ -33,7 +37,6 @@ header p {
 .buscador button {
   border: none;
   background-color: #fff;
-  display: flex-end;
 }
 
 .buscador input {
@@ -61,6 +64,13 @@ header p {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  /* flex-direction: row; */
+}
+
+.burguer-menu {
+  background: #03264c;
+  color: #fff;
+  display: block;
 }
 
 .nav-cuenta {
@@ -89,24 +99,21 @@ main {
 
 .container {
   display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-content: flex-start;
 }
 
 article {
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
   margin: 10px;
   padding: 15px;
   border: 1px solid #ebebeb;
   background-color: #fff;
-  box-shadow: 0.5rem 0.5rem #ddd;
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
   border-radius: 3px;
-}
-
-article img {
-  align-items: center;
 }
 
 article p i {
@@ -137,8 +144,15 @@ article p {
   font-size: 16px;
 }
 
-footer {
+.footer-item {
+  display: block;
   background-color: #fff;
+  margin: auto;
+}
+
+footer {
+  justify-content: center;
+  display: flex;
 }
 
 footer i {
@@ -146,87 +160,82 @@ footer i {
   margin-bottom: 10px;
   color: #0454aa;
 }
-.footer-item {
-  display: block;
-  background-color: #fff;
-  margin: auto;
-}
 
 /* 
-  @media (min-width: 361px) {
-    article {
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .descripciones {
-      display: none;
-    }
-    nav {
-      display: none;
-    }
-  }
-  
-  @media (min-width: 769px) {
-    .descripciones {
-      display: inline-block;
-    }
-    nav {
-      display: inline-block;
-    }
-  }
-  
-  * {
-    background-color: #eac926;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-size: 12px;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  main {
-    text-align: center;
-    width: 100vw;
-  }
-  
-  main section i {
-    display: block;
-    font-size: ​16​px​;
-    padding: ​5​px​;
-    width: ​30​px​;
-    height: ​30​px​;
-    border: ​1​px​ ​solid​ ​#39b54a;
-    background-color: #fff;
-    border-radius: ​50;
-    position: absolute​;
-    right: ​20​px​;
-    top: ​-15​px​;
-  }
-  
-  
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-  }
+@media (min-width: 361px) {
   article {
-    width: 600px;
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #ebebeb;
-    background-color: #ebebeb;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
-  
-  article p {
-    background-color: #ebebeb;
+  .descripciones {
+    display: none;
   }
-  div {
-    text-align: center;
-    width: 90vw;
+  nav {
+    display: none;
   }
-  section {
-    text-align: center;
-    width: 90vw;
+}
+
+@media (min-width: 769px) {
+  .descripciones {
+    display: inline-block;
   }
-   */
+  nav {
+    display: inline-block;
+  }
+}
+
+* {
+  background-color: #eac926;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  text-align: center;
+  width: 100vw;
+}
+
+main section i {
+  display: block;
+  font-size: ​16​px​;
+  padding: ​5​px​;
+  width: ​30​px​;
+  height: ​30​px​;
+  border: ​1​px​ ​solid​ ​#39b54a;
+  background-color: #fff;
+  border-radius: ​50;
+  position: absolute​;
+  right: ​20​px​;
+  top: ​-15​px​;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
+article {
+  width: 600px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+}
+
+article p {
+  background-color: #ebebeb;
+}
+div {
+  text-align: center;
+  width: 90vw;
+}
+section {
+  text-align: center;
+  width: 90vw;
+}
+ */
