@@ -1,3 +1,4 @@
+/* MOTO G4 */
 * {
   margin: 0px;
   padding: 0px;
@@ -18,6 +19,7 @@ header {
   padding: 2rem;
   align-items: center;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -27,10 +29,6 @@ header p {
   display: flex;
 }
 
-.nav-busqueda > * {
-  margin-bottom: 1rem;
-}
-
 .buscador {
   padding-left: 1rem;
   background-color: white;
@@ -38,25 +36,33 @@ header p {
   border-radius: 3px;
   width: 100%;
   align-items: center;
-  padding: 0.7rem;
+  padding: 1rem;
 }
 
 .buscador button {
   border: none;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .buscador input {
   font-size: 1.3rem;
   font-weight: bold;
-  border: 1px solid grey;
+  border: none;
   width: 90%;
+}
+
+.nav-busqueda {
+  display: inline-block;
+  align-items: center;
+}
+
+.nav-busqueda > * {
+  margin-bottom: 1rem;
 }
 
 .nav-menu {
   display: none;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .nav-opciones {
@@ -65,7 +71,6 @@ header p {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  /* flex-direction: row; */
 }
 
 .burger-menu {
@@ -84,20 +89,20 @@ header p {
   list-style: none;
 }
 
-.nav-menu a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
 main {
   background-color: #eee;
+  width: 100vw;
+  text-align: center;
+}
+
+section {
+  padding-top: 253px;
 }
 
 .titulares {
   font-size: 24px;
   font-weight: 2000;
-  margin: 1rem 0 1rem 3rem;
+  margin: 1rem 0 1rem, 0;
 }
 
 .container {
@@ -109,14 +114,13 @@ main {
 
 article {
   display: block;
-  flex-direction: column;
   width: 80wh;
   margin: 10px;
   padding: 15px;
   border: 1px solid #ebebeb;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 article p i {
@@ -145,116 +149,198 @@ article p {
 }
 .descripciones {
   font-size: 16px;
+  display: none;
 }
 
-.footer-item {
-  display: block;
-  background-color: #fff;
-  margin: auto;
-}
+/* .footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+} */
 
 footer {
-  justify-content: center;
-  align-items: center;
   display: flex;
+  flex-direction: column;
+  align-items: justify;
+  background-color: #fff;
 }
 
 footer i {
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #0454aa;
 }
 
-@media (min-width: 361px) /*ipad*/ {
-}
+/* --------------------------------------------------------------------- */
+/* Ipad */
 
-@media (min-width: 769px) /*desktop*/ {
+@media (min-width: 361px) {
+  header {
+    background-color: #eac926;
+    padding: 1.2rem;
+    align-items: center;
+    width: 100%;
+    min-height: 20vh;
+  }
+
+  header p {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    margin: 1rem 1rem 1rem 0rem;
+  }
+
+  .buscador {
+    padding-left: 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    width: 30%;
+    align-items: center;
+    padding: 0.7rem;
+    margin: 1rem 0 1rem 0.5rem;
+  }
+
   .burger-menu {
     display: none;
+  }
+
+  .nav-busqueda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .nav-menu {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: justify;
+    width: 90%;
+  }
+
+  .nav-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  section {
+    padding-top: 205px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 90%;
+    margin: 1rem 0 1rem 3rem;
+  }
+
+  article {
+    display: inline-block;
+    /* flex-direction: column; */
+    width: 20wh;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 3px;
   }
 }
 
-/* 
-@media (min-width: 361px) {
-  article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-  .descripciones {
-    display: none;
-  }
-  nav {
-    display: none;
-  }
-}
+/* --------------------------------------------------------------------- */
+/* Desktop */
 
 @media (min-width: 769px) {
+  header {
+    background-color: #eac926;
+    padding: 1.2rem;
+    align-items: center;
+    /* position: fixed; */
+    width: 100%;
+    min-height: 20vh;
+  }
+
+  header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .nav-busqueda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .buscador {
+    padding-left: 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    width: 40%;
+    align-items: center;
+    padding: 0.7rem;
+  }
+
+  .buscador input {
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    width: 90%;
+  }
+
+  section {
+    padding-top: 149px;
+  }
+
   .descripciones {
-    display: inline-block;
+    display: inline;
   }
-  nav {
-    display: inline-block;
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 20wh;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 3px;
   }
 }
-
-* {
-  background-color: #eac926;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-size: 12px;
-  font-family: "Roboto", sans-serif;
-}
-
-main {
-  text-align: center;
-  width: 100vw;
-}
-
-main section i {
-  display: block;
-  font-size: ​16​px​;
-  padding: ​5​px​;
-  width: ​30​px​;
-  height: ​30​px​;
-  border: ​1​px​ ​solid​ ​#39b54a;
-  background-color: #fff;
-  border-radius: ​50;
-  position: absolute​;
-  right: ​20​px​;
-  top: ​-15​px​;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-wrap: nowrap;
-  align-content: flex-start;
-}
-article {
-  width: 600px;
-  margin: 10px;
-  padding: 15px;
-  border: 1px solid #ebebeb;
-  background-color: #ebebeb;
-}
-
-article p {
-  background-color: #ebebeb;
-}
-div {
-  text-align: center;
-  width: 90vw;
-}
-section {
-  text-align: center;
-  width: 90vw;
-}
- */
