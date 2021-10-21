@@ -146,6 +146,11 @@ footer i {
   margin-bottom: 10px;
   color: #0454aa;
 }
+.footer-item {
+  display: block;
+  background-color: #fff;
+  margin: auto;
+}
 
 /* 
   @media (min-width: 361px) {

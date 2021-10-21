@@ -78,6 +78,11 @@ header p {
 
 /* caracteristicas css de formulario de login */
 
+.footer-item {
+  display: block;
+  background-color: #fff;
+  margin: auto;
+}
 footer {
   background-color: #fff;
 }
