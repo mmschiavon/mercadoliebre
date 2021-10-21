@@ -1,0 +1,89 @@
+* {
+  /* background-color: #eac926; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #eac926;
+  padding: 1.2rem;
+  align-items: center;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+}
+
+.buscador {
+  padding-left: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem;
+}
+
+.buscador button {
+  border: none;
+  background-color: #fff;
+  display: flex-end;
+}
+
+.buscador input {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  width: 80%;
+}
+.nav-busqueda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-opciones {
+  margin: 2rem 0 0 2rem;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-cuenta {
+  margin: 2rem 0 0 2rem;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* caracteristicas css de formulario de login */
+
+footer {
+  background-color: #fff;
+}
+
+footer i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #0454aa;
+}
