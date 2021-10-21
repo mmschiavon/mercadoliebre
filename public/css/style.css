@@ -207,17 +207,30 @@ footer i {
   }
 
   .nav-busqueda {
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
     align-items: center;
-    width: 100%;
   }
 
   .nav-menu {
     display: flex;
     justify-content: space-between;
-    align-items: justify;
-    width: 90%;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .nav-opciones {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .nav-cuenta {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
   }
 
   .nav-menu a {
